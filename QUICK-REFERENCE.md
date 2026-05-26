@@ -3,8 +3,12 @@
 關鍵詞的快速查詢表。點擊任一詞名跳轉到 [DICTIONARY.md](DICTIONARY.md) 對應的詳細詞條。
 
 > 沒看到合用的詞？打開 [DICTIONARY.md](DICTIONARY.md) Ctrl-F 全文搜尋。
+>
+> 本檔由 `data/entries.yml` 經 `scripts/build.py` 自動生成，請勿直接編輯。
+
 
 ---
+
 
 ## 一、結構與系統
 
@@ -31,6 +35,7 @@
 
 ---
 
+
 ## 二、邏輯與推理
 
 | 詞 | Prompt 用法 |
@@ -52,6 +57,7 @@
 | [**邊界條件**](DICTIONARY.md#boundary-condition) | 要求界定方案的適用臨界值 |
 
 ---
+
 
 ## 三、思考與認知
 
@@ -75,6 +81,7 @@
 
 ---
 
+
 ## 四、語言與表達
 
 | 詞 | Prompt 用法 |
@@ -93,6 +100,7 @@
 | [**降噪**](DICTIONARY.md#denoising) | 要求濾出真正關鍵的部分 |
 
 ---
+
 
 ## 五、品質與檢查
 

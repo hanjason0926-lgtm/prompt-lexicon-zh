@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pyyaml jsonschema
+
+      - name: Lint entries
+        run: python scripts/lint_entries.py
+
+      - name: Build markdown
+        run: python scripts/build.py
+
+      - name: Check generated files in sync
+        run: |
+          if ! git diff --exit-code DICTIONARY.md QUICK-REFERENCE.md; then
+            echo "::error::Generated files are out of sync with data/entries.yml. Run scripts/build.py locally and commit the result."
+            exit 1
+          fi
