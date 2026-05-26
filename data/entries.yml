@@ -915,3 +915,75 @@ entries:
     example: 請對這個方案做**邊界測試**，特別說明在零、極大、空輸入時的行為。
     added: "2026-05-26"
     last_verified: "2026-05-26"
+
+  - term: 錨定
+    english: Anchoring
+    slug: anchoring
+    category: cognition
+    origin: 行為經濟學、Tversky & Kahneman (1974)
+    source:
+      name: APA Dictionary of Psychology
+      url: https://dictionary.apa.org/anchoring
+    meaning: 對第一個收到的資訊賦予過高權重、後續判斷以此為基準
+    prompt_usage: 主動給 AI 一個參照點作為起算基準、或要求 AI 警覺自己是否被前文錨定
+    short_usage: 給 AI 一個參照點作為基準
+    example: 請以**錨定**到本季 KPI 為起點，後續所有提案都對齊這個基準評估。
+    added: "2026-05-26"
+    last_verified: "2026-05-26"
+
+  - term: 確認偏誤
+    english: Confirmation Bias
+    slug: confirmation-bias
+    category: cognition
+    origin: 認知心理學、Wason (1960)
+    source:
+      name: APA Dictionary of Psychology
+      url: https://dictionary.apa.org/confirmation-bias
+    meaning: 偏好支持既有信念的資訊、忽略反證
+    prompt_usage: 要求 AI 主動找反證、或檢查論述是否只挑符合假設的資料
+    short_usage: 要求找反證避免單一視角
+    example: 請檢查這份報告是否存在**確認偏誤**，列出三個與結論相反的證據。
+    added: "2026-05-26"
+    last_verified: "2026-05-26"
+
+  - term: 認知負荷
+    english: Cognitive Load
+    slug: cognitive-load
+    category: cognition
+    origin: Sweller (1988) 認知負荷理論
+    source:
+      name: APA Dictionary of Psychology
+      url: https://dictionary.apa.org/cognitive-load
+    meaning: 工作記憶在處理資訊時承受的心智壓力
+    prompt_usage: 要求 AI 降低輸出的閱讀難度、控制每段資訊密度
+    short_usage: 要求降低閱讀難度與資訊密度
+    example: 請以低**認知負荷**為設計目標，每段落只解釋一個概念、術語首次出現必附簡釋。
+    added: "2026-05-26"
+    last_verified: "2026-05-26"
+
+  - term: 辯證法
+    english: Dialectic
+    slug: dialectic
+    category: logic
+    origin: 古希臘哲學、Hegel《邏輯學》
+    source:
+      name: Stanford Encyclopedia of Philosophy - Hegel's Dialectics
+      url: https://plato.stanford.edu/entries/hegel-dialectics/
+    meaning: 透過正論、反論、合論的對立統一推進思考
+    prompt_usage: 要求 AI 用「正論 → 反論 → 合論」三段式結構分析議題
+    short_usage: 要求正反合三段式分析
+    example: 請用**辯證法**結構分析這個議題：先列支持論點、再列反對論點、最後綜合出折衷方案。
+    added: "2026-05-26"
+    last_verified: "2026-05-26"
+
+  - term: 驗收標準
+    english: Acceptance Criteria
+    slug: acceptance-criteria
+    category: quality
+    origin: 敏捷開發、需求工程
+    meaning: 一個交付物被視為「完成」所必須符合的具體可驗證條件
+    prompt_usage: 要求 AI 在開始任務前先明確產出的判定條件、避免做完才發現不對
+    short_usage: 要求先講明「怎樣才算做完」
+    example: 請先列出這份報告的**驗收標準**（至少 5 條可驗證），確認後再開始撰寫。
+    added: "2026-05-26"
+    last_verified: "2026-05-26"

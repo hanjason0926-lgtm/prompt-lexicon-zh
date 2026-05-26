@@ -55,6 +55,7 @@
 | [**等價**](DICTIONARY.md#equivalence) | 要求判斷兩說法是否真同義 |
 | [**歸納**](DICTIONARY.md#induction) | 要求從多案例抽出通則 |
 | [**邊界條件**](DICTIONARY.md#boundary-condition) | 要求界定方案的適用臨界值 |
+| [**辯證法**](DICTIONARY.md#dialectic) | 要求正反合三段式分析 |
 
 ---
 
@@ -78,6 +79,9 @@
 | [**層次化**](DICTIONARY.md#hierarchization) | 要求把扁平清單轉為樹狀結構 |
 | [**類比**](DICTIONARY.md#analogy) | 要求用熟悉事物說明陌生概念 |
 | [**隱喻**](DICTIONARY.md#metaphor) | 要求找一個強力隱喻貫穿說明 |
+| [**錨定**](DICTIONARY.md#anchoring) | 給 AI 一個參照點作為基準 |
+| [**確認偏誤**](DICTIONARY.md#confirmation-bias) | 要求找反證避免單一視角 |
+| [**認知負荷**](DICTIONARY.md#cognitive-load) | 要求降低閱讀難度與資訊密度 |
 
 ---
 
@@ -118,3 +122,4 @@
 | [**雙重檢查**](DICTIONARY.md#double-check) | 要求用另一種方法重新推導一次 |
 | [**漏洞檢查**](DICTIONARY.md#vulnerability-check) | 要求從濫用者視角找弱點 |
 | [**邊界測試**](DICTIONARY.md#boundary-testing) | 要求特別說明極端值與空值行為 |
+| [**驗收標準**](DICTIONARY.md#acceptance-criteria) | 要求先講明「怎樣才算做完」 |

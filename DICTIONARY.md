@@ -345,6 +345,16 @@
 - **Prompt 用法**：要求 AI 明確界定方案在什麼情況下成立、超出何時失效
 - **範例**：請列出這個建議的**邊界條件**，超過哪些情況就不再適用。
 
+
+<a id="dialectic"></a>
+### 辯證法 / Dialectic
+
+- **來源**：古希臘哲學、Hegel《邏輯學》
+- **權威參考**：[Stanford Encyclopedia of Philosophy - Hegel's Dialectics](https://plato.stanford.edu/entries/hegel-dialectics/)
+- **本義**：透過正論、反論、合論的對立統一推進思考
+- **Prompt 用法**：要求 AI 用「正論 → 反論 → 合論」三段式結構分析議題
+- **範例**：請用**辯證法**結構分析這個議題：先列支持論點、再列反對論點、最後綜合出折衷方案。
+
 ---
 
 
@@ -499,6 +509,36 @@
 - **本義**：用 A 概念來理解 B 概念、不是修辭裝飾而是認知工具
 - **Prompt 用法**：要求 AI 找一個強而有力的隱喻來貫穿整段說明
 - **範例**：請為這個複雜系統找一個一以貫之的**隱喻**，讓讀者一句話就懂。
+
+
+<a id="anchoring"></a>
+### 錨定 / Anchoring
+
+- **來源**：行為經濟學、Tversky & Kahneman (1974)
+- **權威參考**：[APA Dictionary of Psychology](https://dictionary.apa.org/anchoring)
+- **本義**：對第一個收到的資訊賦予過高權重、後續判斷以此為基準
+- **Prompt 用法**：主動給 AI 一個參照點作為起算基準、或要求 AI 警覺自己是否被前文錨定
+- **範例**：請以**錨定**到本季 KPI 為起點，後續所有提案都對齊這個基準評估。
+
+
+<a id="confirmation-bias"></a>
+### 確認偏誤 / Confirmation Bias
+
+- **來源**：認知心理學、Wason (1960)
+- **權威參考**：[APA Dictionary of Psychology](https://dictionary.apa.org/confirmation-bias)
+- **本義**：偏好支持既有信念的資訊、忽略反證
+- **Prompt 用法**：要求 AI 主動找反證、或檢查論述是否只挑符合假設的資料
+- **範例**：請檢查這份報告是否存在**確認偏誤**，列出三個與結論相反的證據。
+
+
+<a id="cognitive-load"></a>
+### 認知負荷 / Cognitive Load
+
+- **來源**：Sweller (1988) 認知負荷理論
+- **權威參考**：[APA Dictionary of Psychology](https://dictionary.apa.org/cognitive-load)
+- **本義**：工作記憶在處理資訊時承受的心智壓力
+- **Prompt 用法**：要求 AI 降低輸出的閱讀難度、控制每段資訊密度
+- **範例**：請以低**認知負荷**為設計目標，每段落只解釋一個概念、術語首次出現必附簡釋。
 
 ---
 
@@ -749,3 +789,13 @@
 - **本義**：在輸入範圍的臨界值上特別驗證
 - **Prompt 用法**：要求 AI 特別處理極端值、零值、上限、空值等情境
 - **範例**：請對這個方案做**邊界測試**，特別說明在零、極大、空輸入時的行為。
+
+
+<a id="acceptance-criteria"></a>
+### 驗收標準 / Acceptance Criteria
+
+- **來源**：敏捷開發、需求工程
+- **權威參考**：[ISTQB Glossary](https://glossary.istqb.org/)
+- **本義**：一個交付物被視為「完成」所必須符合的具體可驗證條件
+- **Prompt 用法**：要求 AI 在開始任務前先明確產出的判定條件、避免做完才發現不對
+- **範例**：請先列出這份報告的**驗收標準**（至少 5 條可驗證），確認後再開始撰寫。
