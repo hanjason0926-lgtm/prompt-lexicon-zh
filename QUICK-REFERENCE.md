@@ -1,6 +1,6 @@
 # Prompt 辭典速查表
 
-72 個關鍵詞的快速查詢表。點擊任一詞名跳轉到 [DICTIONARY.md](DICTIONARY.md) 對應的詳細詞條。
+關鍵詞的快速查詢表。點擊任一詞名跳轉到 [DICTIONARY.md](DICTIONARY.md) 對應的詳細詞條。
 
 > 沒看到合用的詞？打開 [DICTIONARY.md](DICTIONARY.md) Ctrl-F 全文搜尋。
 
