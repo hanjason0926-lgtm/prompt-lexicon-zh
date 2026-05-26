@@ -21,7 +21,9 @@
 兩種使用方式：
 
 - 📋 **[QUICK-REFERENCE.md](QUICK-REFERENCE.md)** — 五張速查表，點詞名跳到詳細條目（最快）
-- 📖 **[DICTIONARY.md](DICTIONARY.md)** — 完整詞條（含來源、本義、用法、範例）
+- 📖 **[DICTIONARY.md](DICTIONARY.md)** — 完整詞條（含來源、權威參考、本義、用法、範例）
+
+> 上面兩個檔案是**從 `data/entries.yml` 自動生成**、請勿直接編輯。
 
 各類別詞條數：
 - 一、結構與系統（18）
@@ -29,6 +31,28 @@
 - 三、思考與認知（15）
 - 四、語言與表達（12）
 - 五、品質與檢查（12）
+
+## 貢獻流程（新增/修改詞條）
+
+唯一資料源是 `data/entries.yml`。請**勿直接編輯** `DICTIONARY.md` 或 `QUICK-REFERENCE.md` —— 它們會被 build 腳本覆蓋。
+
+新增一條詞：
+
+1. 在 `data/entries.yml` 的 `entries:` 陣列加一條（參考既有格式）
+2. 跑 `python scripts/lint_entries.py` 確認 schema 通過
+3. 跑 `python scripts/build.py` 產生新 markdown
+4. `git add -A && git commit -m "Add entry: 詞名"`
+5. 開 PR；CI 會自動驗證 schema、build 是否同步
+
+排程任務：每月 1 號自動跑 `verify_sources.py` 檢查所有來源 URL，壞掉會自動開 issue。
+
+### 本地環境
+
+```powershell
+python -m pip install pyyaml jsonschema
+python scripts/lint_entries.py
+python scripts/build.py
+```
 
 ## 授權
 
