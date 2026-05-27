@@ -987,3 +987,30 @@ entries:
     example: 請先列出這份報告的**驗收標準**（至少 5 條可驗證），確認後再開始撰寫。
     added: "2026-05-26"
     last_verified: "2026-05-26"
+
+  - term: 校準
+    english: Calibration
+    slug: calibration
+    category: cognition
+    origin: 心理計量、決策科學
+    source:
+      name: APA Dictionary of Psychology
+      url: https://dictionary.apa.org/calibration
+    meaning: 讓主觀判斷與實際結果對齊的調整過程
+    prompt_usage: 要求 AI 依證據強度調整結論信心，並明示不確定範圍
+    short_usage: 要求依證據強度調整信心並註明不確定
+    example: 請對你的結論做**校準**，高不確定段落要降語氣並標示依據不足處。
+    added: "2026-05-27"
+    last_verified: "2026-05-27"
+
+  - term: 可追溯性
+    english: Traceability
+    slug: traceability
+    category: quality
+    origin: 需求工程、品質管理
+    meaning: 結果能回溯到來源與決策依據的能力
+    prompt_usage: 要求 AI 讓每項結論對應來源、需求或步驟，保留稽核路徑
+    short_usage: 要求結論可回溯到來源與步驟
+    example: 請以**可追溯性**整理此提案，每個結論後都標註對應依據與決策步驟。
+    added: "2026-05-27"
+    last_verified: "2026-05-27"

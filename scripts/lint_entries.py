@@ -6,6 +6,8 @@ Extra checks beyond the JSON schema:
   - Each entry.category exists in `categories`
   - Term names are unique
   - last_verified >= added
+  - `example` includes bolded term marker `**term**`
+  - `short_usage` should not end with punctuation
 """
 from __future__ import annotations
 
@@ -112,6 +114,21 @@ def main() -> int:
             errors.append(
                 f"entry #{i} ({e['term']}): last_verified ({e['last_verified']}) "
                 f"is earlier than added ({e['added']})"
+            )
+
+    # 6. Example must include bolded term marker
+    for i, e in enumerate(entries):
+        marker = f"**{e['term']}**"
+        if marker not in e["example"]:
+            errors.append(
+                f"entry #{i} ({e['term']}): example must include '{marker}'"
+            )
+
+    # 7. short_usage should not end with punctuation
+    for i, e in enumerate(entries):
+        if e["short_usage"].endswith(("。", ".", "!", "！", "?", "？")):
+            errors.append(
+                f"entry #{i} ({e['term']}): short_usage must not end with punctuation"
             )
 
     if errors:
