@@ -1,6 +1,6 @@
 # Prompt 辭典 / Prompt Lexicon
 
-![License](https://img.shields.io/badge/license-MIT-blue) ![Language](https://img.shields.io/badge/lang-繁體中文-brightgreen) ![Entries](https://img.shields.io/badge/entries-77-orange)
+![License](https://img.shields.io/badge/license-MIT-blue) ![Language](https://img.shields.io/badge/lang-繁體中文-brightgreen) ![Entries](https://img.shields.io/badge/entries-79-orange)
 
 一句話定位：**把工程、邏輯、認知科學的精準術語、拿來當 prompt 的控制詞彙。**
 
@@ -28,9 +28,9 @@
 各類別詞條數：
 - 一、結構與系統（18）
 - 二、邏輯與推理（16）
-- 三、思考與認知（18）
+- 三、思考與認知（19）
 - 四、語言與表達（12）
-- 五、品質與檢查（13）
+- 五、品質與檢查（14）
 
 ## 貢獻流程（新增/修改詞條）
 

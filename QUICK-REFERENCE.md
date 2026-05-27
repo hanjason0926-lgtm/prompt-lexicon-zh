@@ -82,6 +82,7 @@
 | [**錨定**](DICTIONARY.md#anchoring) | 給 AI 一個參照點作為基準 |
 | [**確認偏誤**](DICTIONARY.md#confirmation-bias) | 要求找反證避免單一視角 |
 | [**認知負荷**](DICTIONARY.md#cognitive-load) | 要求降低閱讀難度與資訊密度 |
+| [**校準**](DICTIONARY.md#calibration) | 要求依證據強度調整信心並註明不確定 |
 
 ---
 
@@ -123,3 +124,4 @@
 | [**漏洞檢查**](DICTIONARY.md#vulnerability-check) | 要求從濫用者視角找弱點 |
 | [**邊界測試**](DICTIONARY.md#boundary-testing) | 要求特別說明極端值與空值行為 |
 | [**驗收標準**](DICTIONARY.md#acceptance-criteria) | 要求先講明「怎樣才算做完」 |
+| [**可追溯性**](DICTIONARY.md#traceability) | 要求結論可回溯到來源與步驟 |
