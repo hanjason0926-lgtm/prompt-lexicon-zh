@@ -6,6 +6,7 @@ generated markdown files directly — they will be overwritten.
 """
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -21,6 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data" / "entries.yml"
 DICT_OUT = ROOT / "DICTIONARY.md"
 QR_OUT = ROOT / "QUICK-REFERENCE.md"
+README = ROOT / "README.md"
 
 DICT_HEADER = """# Prompt 辭典
 
@@ -126,14 +128,50 @@ def build_quick_ref(data: dict) -> str:
     return "\n".join(parts).rstrip() + "\n"
 
 
+def update_readme(data: dict) -> bool:
+    """Update entries badge and per-category counts in README.md.
+
+    Returns True if README.md was modified, False if already in sync.
+    """
+    if not README.exists():
+        return False
+
+    original = README.read_text(encoding="utf-8")
+    updated = original
+    total = len(data["entries"])
+
+    # Update badge: ![Entries](https://img.shields.io/badge/entries-N-orange)
+    updated = re.sub(
+        r"(entries-)\d+(-orange\))",
+        rf"\g<1>{total}\g<2>",
+        updated,
+    )
+
+    # Update per-category counts: "- 一、結構與系統（18）"
+    grouped = group_entries_by_category(data)
+    categories = data["categories"]
+    for cat_key in ordered_category_keys(data):
+        cat_name = categories[cat_key]["name"]
+        count = len(grouped[cat_key])
+        pattern = rf"(-\s+[一二三四五六七八九十]+、{re.escape(cat_name)}（)\d+(）)"
+        updated = re.sub(pattern, rf"\g<1>{count}\g<2>", updated)
+
+    if updated != original:
+        README.write_text(updated, encoding="utf-8", newline="\n")
+        return True
+    return False
+
+
 def main() -> int:
     data = load()
     dict_md = build_dictionary(data)
     qr_md = build_quick_ref(data)
     DICT_OUT.write_text(dict_md, encoding="utf-8", newline="\n")
     QR_OUT.write_text(qr_md, encoding="utf-8", newline="\n")
+    readme_changed = update_readme(data)
     n = len(data["entries"])
-    print(f"OK Built DICTIONARY.md and QUICK-REFERENCE.md ({n} entries)")
+    extra = " + README.md" if readme_changed else ""
+    print(f"OK Built DICTIONARY.md and QUICK-REFERENCE.md{extra} ({n} entries)")
     return 0
 
 
