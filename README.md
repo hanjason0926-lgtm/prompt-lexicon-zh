@@ -13,7 +13,7 @@
 ## 怎麼用
 
 1. 寫 prompt 時想表達某個控制意圖
-2. 在 [DICTIONARY.md](DICTIONARY.md) Ctrl-F 找最貼近的術語
+2. 在 [QUICK-REFERENCE.md](QUICK-REFERENCE.md) 速查表找到合用的詞、點擊跳到 [DICTIONARY.md](DICTIONARY.md) 對應條目
 3. 把術語放進 prompt，例：「請以**冪等性**原則撰寫這段 SOP」
 
 ## 索引
@@ -34,7 +34,7 @@
 
 ## 貢獻流程（新增/修改詞條）
 
-唯一資料源是 `data/entries.yml`。請**勿直接編輯** `DICTIONARY.md` 或 `QUICK-REFERENCE.md` —— 它們會被 build 腳本覆蓋。
+唯一資料源是 `data/entries.yml`。請**勿直接編輯** `DICTIONARY.md` 或 `QUICK-REFERENCE.md`，它們會被 build 腳本覆蓋。
 
 新增一條詞：
 
@@ -42,7 +42,7 @@
 2. 跑 `python scripts/lint_entries.py` 確認 schema 通過
 3. 跑 `python scripts/build.py` 產生新 markdown
 4. `git add -A && git commit -m "Add entry: 詞名"`
-5. 開 PR；CI 會自動驗證 schema、build 是否同步
+5. `git push` 後、GitHub Actions 會自動跑驗證、確認 schema 與生成檔同步
 
 排程任務：每月 1 號自動跑 `verify_sources.py` 檢查所有來源 URL，壞掉會自動開 issue。
 
