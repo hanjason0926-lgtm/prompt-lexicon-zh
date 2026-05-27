@@ -26,7 +26,7 @@ jobs:
 
       - name: Check generated files in sync
         run: |
-          if ! git diff --exit-code DICTIONARY.md QUICK-REFERENCE.md; then
+          if ! git diff --exit-code DICTIONARY.md QUICK-REFERENCE.md README.md; then
             echo "::error::Generated files are out of sync with data/entries.yml. Run scripts/build.py locally and commit the result."
             exit 1
           fi
