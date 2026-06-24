@@ -1014,3 +1014,19 @@ entries:
     example: 請以**可追溯性**整理此提案，每個結論後都標註對應依據與決策步驟。
     added: "2026-05-27"
     last_verified: "2026-05-27"
+
+  # Owner 核准破例（2026-06-24）：Claude 產品功能，非借詞，但收錄。詳見 AGENTS.md §1。
+  - term: 成品
+    english: Artifact
+    slug: artifact
+    category: structure
+    origin: Anthropic Claude 產品功能（2024）
+    source:
+      name: Claude Help Center - What are artifacts and how do I use them?
+      url: https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them
+    meaning: 把 AI 產出渲染成獨立、可即時瀏覽與分享的 claude.ai 頁面
+    prompt_usage: 要求 AI 把成果做成自包含、可即時預覽與分享的獨立頁面、而非只給對話內純文字
+    short_usage: 要求把成果做成可分享的獨立頁面
+    example: 請把這份報表做成 **成品**（Artifact），獨立成可即時瀏覽、可分享的頁面。
+    added: "2026-06-24"
+    last_verified: "2026-06-24"

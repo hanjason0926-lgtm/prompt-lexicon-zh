@@ -190,6 +190,16 @@
 - **Prompt 用法**：要求 AI 從使用者第一個動作講到最後一個結果、不要只看片段
 - **範例**：請以 **E2E** 視角描述這個流程，從使用者按下按鈕到收到結果為止。
 
+
+<a id="artifact"></a>
+### 成品 / Artifact
+
+- **來源**：Anthropic Claude 產品功能（2024）
+- **權威參考**：[Claude Help Center - What are artifacts and how do I use them?](https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them)
+- **本義**：把 AI 產出渲染成獨立、可即時瀏覽與分享的 claude.ai 頁面
+- **Prompt 用法**：要求 AI 把成果做成自包含、可即時預覽與分享的獨立頁面、而非只給對話內純文字
+- **範例**：請把這份報表做成 **成品**（Artifact），獨立成可即時瀏覽、可分享的頁面。
+
 ---
 
 

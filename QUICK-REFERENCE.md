@@ -32,6 +32,7 @@
 | [**單一職責**](DICTIONARY.md#single-responsibility) | 要求每個段落只負責一件事 |
 | [**顆粒度**](DICTIONARY.md#granularity) | 要求用指定粗細程度展開 |
 | [**E2E**](DICTIONARY.md#e2e) | 要求從頭到尾講完整條鏈路 |
+| [**成品**](DICTIONARY.md#artifact) | 要求把成果做成可分享的獨立頁面 |
 
 ---
 
