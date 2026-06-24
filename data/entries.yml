@@ -1014,3 +1014,15 @@ entries:
     example: 請以**可追溯性**整理此提案，每個結論後都標註對應依據與決策步驟。
     added: "2026-05-27"
     last_verified: "2026-05-27"
+
+  - term: 產出物
+    english: Artifact
+    slug: artifact
+    category: structure
+    origin: 軟體工程、需求工程（ISO/IEC/IEEE 24765）
+    meaning: 由開發流程產生、可獨立保存與交付的有形產物
+    prompt_usage: 要求 AI 把推理過程與最終成果分開、把可交付的部分整理成獨立自足的產出物
+    short_usage: 要求把可交付成果整理成獨立產出物
+    example: 請把這次分析的最終**產出物**獨立成一份可交付的文件，與中間推理過程分開。
+    added: "2026-06-24"
+    last_verified: "2026-06-24"
